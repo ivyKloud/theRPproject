@@ -1,0 +1,7 @@
+.card-container{
+    background-color: var(--palette03);
+    border-radius: 15px;
+    width: 224px;
+    height: 136px;
+    padding: 8px;
+}
