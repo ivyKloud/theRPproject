@@ -1,12 +1,7 @@
-import { CSSProperties, ReactNode } from 'react'
+import { BoxProps } from './Box'
 
 import './atoms.css'
 
-type TitleH1Props = {
-    children:ReactNode
-    style?:CSSProperties
-}
-
-export const TitleH1 = ({children, style}:TitleH1Props) => {
+export const TitleH1 = ({children, style}:BoxProps) => {
     return <h1 className='h1-title' style={{...style}}>{children}</h1>
 }

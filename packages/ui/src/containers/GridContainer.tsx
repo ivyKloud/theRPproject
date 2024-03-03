@@ -1,8 +1,7 @@
-import { ReactNode } from "react"
-import { Box } from "../atoms/Box"
+import { Box, BoxProps } from "../atoms/Box"
 
 import './containers.css'
 
-export const GridContainer = ({children}:{children:ReactNode}) => {
+export const GridContainer = ({children}:BoxProps) => {
     return <Box className="grid-container">{children}</Box>
 }
