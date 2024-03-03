@@ -1,5 +1,4 @@
-.title{
+.h1-title{
     color: var(--text-light);
-    font-weight: bold;
     font-size: 48px;
 }

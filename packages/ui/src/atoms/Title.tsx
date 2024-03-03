@@ -1,5 +1,7 @@
+import { CSSProperties, ReactNode } from 'react'
+
 import './atoms.css'
 
-export const Title = ({title}:{title:string}) => {
-    return <div className='title'>{title}</div>
+export const TitleH1 = ({children, style}:{children:ReactNode, style?:CSSProperties}) => {
+    return <h1 className='h1-title' style={{...style}}>{children}</h1>
 }
