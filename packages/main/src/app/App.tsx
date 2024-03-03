@@ -1,4 +1,7 @@
+import { Title } from '@repo/ui'
 
 export const TheProjectApp = () => {
-    return <>Hello Project App</>
+    return <>
+        <Title title='The RP Project' />
+    </>
 }
