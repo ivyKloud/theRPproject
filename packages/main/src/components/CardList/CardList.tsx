@@ -1,24 +1,14 @@
-import { Card, GridContainer } from "@repo/ui"
+"use client"
 
-const data = [
-    {
-        title:'title1',
-        subtitle:'subtitle1',
-        href:'https://google.fr',
-        color: '#E3561A',
-    },
-    {
-        title:'title2',
-        subtitle:'subtitle2',
-        href:'https://google.fr',
-        color: '#468864',
-    }
-]
-export const CardList = ({}) => {
+import { Card, GridContainer } from "@repo/ui"
+import { useCards } from "../../context/AppProvider"
+
+export const CardList = () => {
+    const cards = useCards()
     return (
         <GridContainer>
-            {data.map(({title, subtitle, href, color}) => 
-                <Card title={title} subtitle={subtitle} href={href} color={color} />
+            {cards.map(({title, featuring, link, color}, index) => 
+                <Card title={title} subtitle={featuring} href={link} color={color} key={`card_${index}`} />
             )}
         </GridContainer>
     )
