@@ -1,17 +1,12 @@
-import { ReactNode } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 
-interface ButtonProps {
+type ButtonProps = HTMLAttributes<HTMLButtonElement> & {
   children: ReactNode
-  className?: string
-  appName: string
 }
 
-export const Button = ({ children, className, appName }: ButtonProps) => {
+export const Button = ({ children, ...props }: ButtonProps) => {
   return (
-    <button
-      className={className}
-      onClick={() => alert(`button click`)}
-    >
+    <button className="atom-button" {...props}>
       {children}
     </button>
   );

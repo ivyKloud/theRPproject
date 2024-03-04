@@ -1,4 +1,6 @@
+import { Button } from ".."
 import { Box } from "../atoms/Box"
+import { Divider } from "../atoms/Divider"
 
 import './card.css'
 
@@ -14,10 +16,15 @@ export const Card = ({
 }: CardProps) => {
   return (
     <Box className="card-container">
-      <h4 style={{color}}>{title} <span>-&gt;</span></h4>
-      <p>{subtitle}</p>
-      <hr/>
-      <a href={href} target="_blank">Voir</a>
+      <Box className="card-title" style={{color}}>{title} </Box>
+      <Box className="card-subtitle">{subtitle}</Box>
+      <Divider/>
+      <Box className="card-href">
+        <a href={href} target="_blank">GoTo</a>
       </Box>
+      <Box className="card-buttons">
+        <Button>Mark as done</Button>
+      </Box>
+    </Box>
   )
 }
