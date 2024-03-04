@@ -7,6 +7,24 @@
     padding: 8px;
 }
 
+.card-container.new{
+    background-color: var(--palette01);
+    border: 3px solid var(--palette04);
+    color: var(--palette04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+.card-container.new:hover{
+    background-color: var(--palette01);
+    border: 3px solid var(--palette03);
+    color: var(--palette03);
+}
+
 .card-title{
     font-weight: bold; 
     font-size:16px;
@@ -20,6 +38,7 @@
 .card-href{
     text-align: right;
     font-size: 12px;
+    color: var(--palette01);
 }
 
 .card-buttons{

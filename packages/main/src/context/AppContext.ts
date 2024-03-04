@@ -8,14 +8,14 @@ type ContextProps = {
 
 const defaultContext:ContextProps = {
  cards: [{
-    title:'title1',
-    featuring:'feat1',
+    title:'Chapter 1',
+    featuring:'ft. Romeo',
     link:'https://google.fr',
     color: '#E3561A',
 },
 {
-    title:'title2',
-    featuring:'feat2',
+    title:'Chapter 2',
+    featuring:'ft. Juliet',
     link:'https://google.fr',
     color: '#468864',
 }]
