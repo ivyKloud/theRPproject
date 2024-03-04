@@ -24,6 +24,7 @@ export const Card = ({
       </Box>
       <Box className="card-buttons">
         <Button>Mark as done</Button>
+        <Button variant="secondary">Delete</Button>
       </Box>
     </Box>
   )

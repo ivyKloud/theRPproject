@@ -9,9 +9,18 @@
 }
 
 .atom-button{
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.atom-button.primary{
     background-color: var(--palette01);
     border: 1px solid var(--palette02);
     color: var(--text-light);
-    border-radius: 4px;
-    padding: 4px 8px;
+}
+
+.atom-button.secondary{
+    background-color: var(--palette04);
+    border: 1px solid var(--palette01);
+    color: var(--text-dark);
 }
