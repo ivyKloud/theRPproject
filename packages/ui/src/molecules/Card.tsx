@@ -9,10 +9,12 @@ type CardProps = {
   subtitle?: string
   color: string
   href: string
+  status?: string
+  onClickStatus: () => void
 }
 
 export const Card = ({
-  title, subtitle, color, href,
+  title, subtitle, color, status, href, onClickStatus
 }: CardProps) => {
   return (
     <Box className="card-container">
@@ -23,8 +25,8 @@ export const Card = ({
         <a href={href} target="_blank">GoTo</a>
       </Box>
       <Box className="card-buttons">
-        <Button>Mark as done</Button>
-        <Button variant="secondary">Delete</Button>
+        {status && <Button onClick={onClickStatus}>Mark as {status === 'done' ? 'ToDo' : 'Done'}</Button>}
+        <Button variant="secondary" onClick={() => alert('come back laterr')}>Delete</Button>
       </Box>
     </Box>
   )

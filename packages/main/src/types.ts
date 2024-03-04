@@ -1,6 +1,10 @@
 export type Card = {
-    title: string
-    featuring?: string
-    color: string
-    link: string
-  }
+  id: number
+  title: string
+  featuring?: string
+  color: string
+  link: string
+  status: CardStatus
+}
+
+export type CardStatus = 'done' | 'todo'
